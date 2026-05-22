@@ -1,0 +1,30 @@
+# Proyecto Final: La Anomalía de San Pedro
+
+Equipo: Darío Francisco Ampuero Rodríguez & Nicolás Véliz
+Comunas Asignadas: Recoleta, Independencia, Padre Hurtado, San Pedro.
+
+## 1. La Anomalía
+Nuestro análisis reveló un pico masivo en la tasa de Enfermedades de Notificación Obligatoria (ENO) para la comuna rural de San Pedro. A pesar de tener métricas demográficas alineadas con el promedio regional (11.3% de población extranjera, 38.1% de desempleo), San Pedro exhibe una tasa ENO astronómica de 609.17 por cada 10,000 habitantes (casi nueve veces superior a la media de la Región Metropolitana). Nuestro código descarta el efecto de "escasez de N pequeño" al confirmar un volumen absoluto masivo de 731 casos. Esto sugiere fuertemente una causa exógena, como un brote zoonótico o, más probablemente, un artefacto de registro donde un gran recinto de salud está ingresando casos de múltiples comunas bajo el código de San Pedro.
+
+## 2. Reproducibilidad
+Notebook del Headline Figure: El código de aislamiento de datos y la figura principal (*Headline Figure*) se generan íntegramente en el archivo `notebooks/final_anomaly.ipynb`.
+Tiempo de Ejecución: Debido a que el notebook utiliza nuestra tabla maestra analítica pre-calculada (`tarea3_analytical_table.csv`), el código tarda **menos de 1 minuto** en ejecutarse de principio a fin.
+
+## 3. Instalación y Ejecución
+Para reproducir nuestros hallazgos, clona este repositorio e instala las dependencias necesarias:
+
+```bash
+git clone [INSERTA TU LINK DE GITHUB AQUÍ]
+cd [NOMBRE DE LA CARPETA DEL REPOSITORIO]
+pip install -r requirements.txt
+```
+
+Luego, abre Jupyter Notebook o Google Colab, navega hasta la carpeta `notebooks/` y ejecuta todas las celdas de `final_anomaly.ipynb`.
+
+## 4. Declaración de Uso de IA
+Durante el desarrollo de este proyecto final, utilizamos Gemini estrictamente como copiloto. Específicamente, se utilizó para:
+Estructurar y redactar este archivo `README.md`.
+Generar el código de visualización con `matplotlib` y `seaborn` para aislar a San Pedro y dibujar la figura principal.
+Escribir la lógica de filtrado en `pandas` para testear matemáticamente y descartar nuestras hipótesis alternativas.
+
+Todo el marco conceptual, la selección de la anomalía y las conclusiones finales son de autoría propia y se basan en la evidencia de los datos generados.
