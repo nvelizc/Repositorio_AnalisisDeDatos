@@ -15,7 +15,7 @@ Para reproducir nuestros hallazgos, clona este repositorio e instala las depende
 
 ```bash
 git clone: https://github.com/nvelizc/Repositorio_AnalisisDeDatos.git
-cd [NOMBRE DE LA CARPETA DEL REPOSITORIO]
+cd: Repositorio_AnalisisDeDatos
 pip install -r requirements.txt
 ```
 
