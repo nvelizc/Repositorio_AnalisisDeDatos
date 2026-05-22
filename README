@@ -14,7 +14,7 @@ Tiempo de Ejecución: Debido a que el notebook utiliza nuestra tabla maestra ana
 Para reproducir nuestros hallazgos, clona este repositorio e instala las dependencias necesarias:
 
 ```bash
-git clone [INSERTA TU LINK DE GITHUB AQUÍ]
+git clone: https://github.com/nvelizc/Repositorio_AnalisisDeDatos.git
 cd [NOMBRE DE LA CARPETA DEL REPOSITORIO]
 pip install -r requirements.txt
 ```
